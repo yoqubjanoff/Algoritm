@@ -188,39 +188,87 @@
 // console.log(hasBad("xbadxx"));
 
 
+//? 19-masala Given a string, return a string length 2 made of its first 2 chars. If the string length is less than 2, use '@' for the missing chars.
+// function atFirst(str){
+//     if (str.length >= 2) {
+//         return str.slice(0,2);
+//     }else{
+//         return str.padEnd(2,"@")
+//     }
+// }
+// console.log(atFirst("h"));
 
 
+//? 20-masala Given 2 strings, a and b, return a new string made of the first char of a and the last char of b, so "yo" and "java" yields "ya". If either string is length 0, use '@' for its missing char.
+// function lastChars(a,b) {
+//         let first_char, last_char;
+//         if (a.length === 0) {
+//           first_char = "@";
+//         } else {
+//           first_char = a[0];
+//         }
+      
+//         if (b.length === 0) {
+//           last_char = "@";
+//         } else {
+//           last_char = b[b.length - 1];
+//         }
+      
+//         return first_char + last_char;
+    
+      
+// }
+// console.log(lastChars("java", "chars"));
+// console.log(lastChars('last', 'chars')); // konsolga: "ls" chiqadi
+// console.log(lastChars('yo', 'java'));   // konsolga: "ya" chiqadi
+// console.log(lastChars('hi', ''));       // konsolga: "h@" chiqadi
 
 
+//? 21-masala Given two strings, append them together (known as "concatenation") and return the result. However, if the concatenation creates a double-char, then omit one of the chars, so "abc" and "cat" yields "abcat".
+// function conCat(a, b){
+//     if(a[a.length -1] === b[0]){
+//        return a.slice(0,a.length-1) + b
+//      }else{
+//        return a + b
+//      }
+//   }
+
+//   console.log(conCat('abc', ''))
 
 
+//? 22-masala Given a string of any length, return a new string where the last 2 chars, if present, are swapped, so "coding" yields "codign".
+// function swapLastTwoChars(str) {
+//     if(str.length < 2){
+//         return str;
+//     }else{
+//         return str.slice(0, -2) + str.slice(-1) + str.slice(-2, -1) 
+//     }
+// }
+// console.log(swapLastTwoChars("cat"));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//? 23-masala Given a string, if the string begins with "red" or "blue" return that color string, otherwise return the empty string.
+// function seeColor(str){
+//     if(str.startsWith("red")){
+//         return str.slice(0,3)
+//     }else if(str.startsWith("blue")){
+//         return str.slice(0,4)
+//     }else{
+//         return ""
+//     }
+// }
+// console.log(seeColor("redxx"));
+// todo bu loop da yechimi
+// function seeColor(str) {
+//   const colors = ['red', 'blue'];
+//   for (let i = 0; i < colors.length; i++) {
+//     const color = colors[i];
+//     if (str.startsWith(color)) {
+//       return color;
+//     }
+//   }
+//   return '';
+// }
+// console.log(seeColor('bluejkjkj')); // konsolga: "red" chiqadi
 
 
 
